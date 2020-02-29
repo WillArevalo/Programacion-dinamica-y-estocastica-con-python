@@ -20,6 +20,7 @@ def dynamic_fibonacci(n, memo = {}):
         return result
 
 if __name__=="__main__":
+    sys.setrecursionlimit(limit=10002) # Add more recursion
     n = int(input('Choice a number:'))
     recursive_result = int(input(
 """Do you want the result of recursive_fibonacci?
